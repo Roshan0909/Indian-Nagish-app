@@ -1,0 +1,178 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0056b3; /* Deep blue */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Navbar shadow */
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffdd57; /* Yellow highlight on hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    background: linear-gradient(135deg, #ffffff, #e3f2fd); /* Light gradient background */
+    border: 1px solid #ddd; /* Light border for better definition */
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s; /* Transition effect for shadow */
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Styles */
+textarea, select, button {
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 10px;
+    width: calc(100% - 24px); /* Adjust width to fit padding */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient button */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s; /* Transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on press */
+}
+
+/* Back Button Styles */
+.back-button {
+    background-color: #ffdd57; /* Bright yellow */
+    color: #007bff;
+    border: 1px solid #007bff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Listening Indicator Styles */
+#listening-indicator {
+    display: none; /* Hide by default */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Blue spinner */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite; /* Spinner animation */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1rem; /* Smaller font size for mobile */
+        margin-left: 0.5rem;
+    }
+}
